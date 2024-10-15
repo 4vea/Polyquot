@@ -1,0 +1,118 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    }
+    .nav-item{
+    font-size: 20px;
+    }
+    .text-center{
+    color: rgb(236, 233, 40);
+    font-family: 'Cormorant Garamond', serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 32px;
+    }
+    .custom-font-size {
+        color: rgb(255, 255, 255);
+        }
+    @media (min-width: 768px) {
+    .custom-font-size {
+    font-size: 44px;
+    }
+    }
+    @media (min-width: 768px) {
+    .custom-font-size2 {
+    font-size: 28px;
+    margin-left: 25px;
+    margin-right: 25px;
+    }
+    }
+    #nav-hover{
+        color: rgb(255, 255, 255);
+        }
+    #nav-hover:hover{
+        color: rgb(129, 121, 121);
+        }
+    
+    .text-primary{
+    color: rgb(255, 213, 25);
+    }
+    
+    .hover-pointer {
+    cursor: pointer;
+    }
+    
+    [data-bs-toggle="popover"] {
+    user-select: none;
+    }
+    
+    #text-original {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 980px;
+    }
+    
+    #text-alt {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 980px;
+    display: none;
+    }
+    #btn-toggle{
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.932);
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Cormorant Garamond', serif;
+    
+    }
+    @media (max-width: 767px) {
+        #btn-toggle{
+            font-size: 16px;
+            }
+        }
+
+    #playButton{
+        background-color: rgb(138, 135, 135);
+        color: rgb(240, 240, 240);
+        border: none;
+        padding: 10px;
+        font-size: 28px;
+        border-radius: 50%;
+        position: absolute;
+        top: 73%;
+        left: 49%;
+    }    
+    #playButton:hover{
+        background-color: rgb(87, 86, 86);
+        color: black;
+    }    
+    @media (max-width: 767px) {
+        #playButton{
+            top: 70%;
+            font-size: 24px;
+            }
+        }
+        @media (max-width: 337px) {
+            #autor{
+                font-size: 24px;
+                }
+            }

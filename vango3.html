@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Cormorant+Garamond:ital,wght@1,600&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Polyquot</title>
+</head>
+<body>
+    <div class="container">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active custom-font-size2" id="nav-hover" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active custom-font-size2" id="nav-hover" href="./menú/prueba.html">Menú</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-warning custom-font-size2" href="#"><u>Van Gogh</u></a>
+            </li>
+            </ul>
+
+
+        <div class="custom-center">
+            <p id="text-original" class="text-center custom-font-size">“<span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content="El">The </span><span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content="Arte">art </span><span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content="es">is</span>
+                <span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content=" Un/Una">a </span>
+                <span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content=" Combate">combat. </span>
+                <span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content="En">In </span>
+                <span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content=" Arte">art </span>
+                <span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content=" Es">it´s </span>
+                <span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content=" Necesario">necessary </span>
+                <span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content=" ´To´ cumple la función de introducir un infinitivo en el contexto de una expresión de necesidad u obligación.">to </span>
+                <span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content=" Incluso">even </span>
+                <span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content=" Arriesgar">risk </span>
+                <span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content=" Tu/Tus">your </span>
+                <span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content=" Piel">skin </span>”</p>
+
+            <p id="text-alt" class="text-center custom-font-size">“<span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content="The">El </span><span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content="Art">Arte </span><span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content="Is">es</span>
+                <span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content=" Un/Una">un </span>
+                <span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content=" Combat">combate. </span>
+                <span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content="in">en </span>
+                <span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content="The">el </span>
+                <span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content=" Art">arte </span>
+                <span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content=" It´s">es </span>
+                <span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content=" Necessary">necesario </span>
+                <span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content=" To even">incluso </span>
+                <span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content=" Risk">arriesgar </span>
+                <span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content=" Your">tu </span>
+                <span class="text-warning hover-pointer" data-bs-toggle="popover" data-bs-content=" Skin">piel </span>.”</p>
+            <button id="btn-toggle" class="btn-toggle" btn-outline-warning onclick="traducir()"><span class="material-symbols-outlined">
+                g_translate
+                </span></button>
+        </div>
+        
+        </div>
+        <div class="container-autor">
+            <div class="fixed-bottom d-flex justify-content-center mb-4">
+                <p class="text-center custom-font-size" id="autor"><a href="vango2.html" class="btn btn-light">⇤</a> - Vincent Van Gogh <a href="vango4.html" class="btn btn-light">⇥</a></p>
+            </div>
+        </div>
+
+
+        <script>
+            // Función para que al hacer click se muestre la traducción
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl)
+            });
+        </script>
+
+        <script>
+            // Función para cambiar el texto de español/ingles ingles/español
+            function traducir() {
+                // Obtiene los elementos por sus ids
+                var textOriginal = document.getElementById("text-original");
+                var textAlt = document.getElementById("text-alt");
+                var btnToggle = document.getElementById("btn-toggle");
+    
+                // Verifica si el texto original está visible
+                if (textOriginal.style.display == "block") {
+                    // Oculta el texto original y muestra el alternativo
+                    textOriginal.style.display = "none";
+                    textAlt.style.display = "block";
+                    // Cambia el texto del botón
+                    btnToggle.innerHTML = "Inglés";
+                } else {
+                    // Muestra el texto original y oculta el alternativo
+                    textOriginal.style.display = "block";
+                    textAlt.style.display = "none";
+                    // Cambia el texto del botón
+                    btnToggle.innerHTML = "Español";
+                }
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Cormorant+Garamond:ital,wght@1,600&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300&display=swap" rel="stylesheet">
+    <title>Menu</title>
+    <style>
+        body{
+        margin: 0;
+        padding: 0;
+        background-image: url(lunas2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        }
+        .navbar{
+            background-color: rgb(26, 25, 25);
+        }
+        .nav-titulo{
+            font-family: 'Grenze Gotisch', cursive;
+            font-size: 40px;
+            margin-left: 10px;
+        }
+        .nav-item{
+            font-family: 'Grenze Gotisch', cursive;
+            font-size: 30px;
+            margin-left: 50px;
+        }
+        #hover1:hover{
+            color: rgb(197, 139, 12);
+        }
+        #hover2:hover{
+            color: rgb(197, 139, 12);
+        }
+        @media (max-width: 769px) {
+            .nav-item{
+            margin-left: 10px;
+        }
+        }
+        #current{
+            color: rgb(197, 139, 12);
+        }
+        .accordion-item {
+        background-color: rgba(255, 255, 255, 0);
+        border: none !important; 
+        }
+        .mi-acordeon {
+        font-size: 34px;
+        font-family: 'Cormorant Garamond', serif;
+        letter-spacing: 2px;
+        }
+        @media (max-width: 769px) {
+            .mi-acordeon {
+        font-size: 30px;
+        }
+        }
+        .mi-acordeon:hover {
+        background-color: rgba(10, 10, 43, 0.342);
+        color: rgb(197, 139, 12);
+        }
+        .mi-acordeon {
+        background-color: rgba(0, 0, 0, 0.404) !important;
+        color: #fffffe !important; 
+        }
+
+        .mi-acordeon:focus, .mi-acordeon:hover {
+        background-color: rgba(0, 0, 0, 0.404) !important;
+        color: rgb(197, 139, 12) !important; 
+        }
+
+        .mi-acordeon:focus {
+        color: rgb(197, 139, 12);
+        outline: none !important;
+        box-shadow: none !important;
+        -webkit-tap-highlight-color: transparent !important;
+        }
+
+        .btn{
+        margin-bottom: 10px;
+        margin-left: 10px;
+        background-color: rgba(184, 132, 21, 0.527);
+        color: white;
+        }
+        @media (max-width: 769px) {
+            .btn{
+        margin-left: 1px;
+        }
+        }
+
+        #p1{
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+        padding: 10px 10px 10px 10px;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 30px;
+        letter-spacing: 1px;
+        }
+        @media (max-width: 767px) {
+            #p1{
+            margin-left: -10px;
+            font-size: 24px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+        <a class="navbar-brand nav-titulo" href="#">P o l y q u o T</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" id="hover1" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" id="current" href="#"><u>Quots</u></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" id="hover2" href="../duelo/index.html">Duelo</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button mi-acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            - Platón
+            </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+                <p id="p1">Platón sobre la compañía. <a href="../Platon1.html" class="btn btn-warning">←</a> </p>
+                <p id="p1">Platón sobre las decisiones <a href="../Platon2.html" class="btn btn-warning">←</a><br></p>
+                <p id="p1">Platón sobre el comportamiento. <a href="../platon3.html" class="btn btn-warning">←</a><br></p>
+                <p id="p1">Platón sobre el odio. <a href="../platon4.html" class="btn btn-warning">←</a><br></p>
+            </div>
+        </div>
+        </div>
+        <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed mi-acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            - Van Gogh
+            </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+                <p id="p1">Van Goh sobre el conocimiento. <a href="../vango1.html" class="btn btn-warning">←</a> </p>
+                <p id="p1">Van Goh sobre el trabajo. <a href="../vango2.html" class="btn btn-warning">←</a><br></p>
+                <p id="p1">Van Goh sobre el arte. <a href="../vango3.html" class="btn btn-warning">←</a><br></p>
+                <p id="p1">Van Goh sobre las pinturas. <a href="../vango4.html" class="btn btn-warning">←</a><br></p>
+                <p id="p1">Van Goh sobre los quebrantados. <a href="../vango5.html" class="btn btn-warning">←</a><br></p>
+                <p id="p1">Van Goh sobre el amor. <a href="../vango6.html" class="btn btn-warning">←</a><br></p>
+                <p id="p1">Van Goh sobre los sueños. <a href="../vango7.html" class="btn btn-warning">←</a><br></p>
+                <p id="p1">Van Goh sobre la pasión. <a href="../vango8.html" class="btn btn-warning">←</a><br></p>
+                <p id="p1">Van Goh sobre la conciencia. <a href="../vango9.html" class="btn btn-warning">←</a><br></p>
+                <p id="p1">Van Goh sobre el arte y el amor. <a href="../vango10.html" class="btn btn-warning">←</a><br></p>
+            </div>
+        </div>
+        </div>
+        <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed mi-acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            - Aristóteles
+            </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+                <p id="p1">Aristóteles sobre la dignidad. <a href="../aris1.html" class="btn btn-warning">←</a> </p>
+                <p id="p1">Aristóteles sobre la felicidad. <a href="../aris2.html" class="btn btn-warning">←</a><br></p>
+                <p id="p1">Aristóteles sobre los hábitos. <a href="../aris3.html" class="btn btn-warning">←</a><br></p>
+                <p id="p1">Aristóteles sobre la sabiduría. <a href="../aris4.html" class="btn btn-warning">←</a><br></p>
+                <p id="p1">Aristóteles sobre la ignorancia. <a href="../aris5.html" class="btn btn-warning">←</a><br></p>
+            </div>
+        </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                <button class="accordion-button collapsed mi-acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                - Miyamoto Musashi
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                <div class="accordion-body">
+                    <p id="p1">Miyamoto sobre las metas. <a href="../miyamoto/miyamoto1.html" class="btn btn-danger">←</a> </p>
+                    <p id="p1">Miyamoto sobre las victorias. <a href="../miyamoto/miyamoto2.html" class="btn btn-danger">←</a> </p>
+                </div>
+            </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                    <button class="accordion-button collapsed mi-acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                    - Maquiavelo
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                    <div class="accordion-body">
+                        <p id="p1">Maquiavelo 1 <a href="../maquiavelo/maquiavelo1.html" class="btn btn-danger">←</a> </p>
+                        <p id="p1">Maquiavelo 2 <a href="../maquiavelo/maquiavelo1.html" class="btn btn-danger">←</a> </p>
+                        <p id="p1">Maquiavelo 3 <a href="../maquiavelo/maquiavelo1.html" class="btn btn-danger">←</a> </p>
+                        <p id="p1">Maquiavelo 4 <a href="../maquiavelo/maquiavelo1.html" class="btn btn-danger">←</a> </p>
+                        <p id="p1">Maquiavelo 5 <a href="../maquiavelo/maquiavelo1.html" class="btn btn-danger">←</a> </p>
+                        <p id="p1">Maquiavelo 6 <a href="../maquiavelo/maquiavelo1.html" class="btn btn-danger">←</a> </p>
+                        <p id="p1">Maquiavelo 7 <a href="../maquiavelo/maquiavelo1.html" class="btn btn-danger">←</a> </p>
+                        <p id="p1">Maquiavelo 8 <a href="../maquiavelo/maquiavelo1.html" class="btn btn-danger">←</a> </p>
+                        <p id="p1">Maquiavelo 9 <a href="../maquiavelo/maquiavelo1.html" class="btn btn-danger">←</a> </p>
+                        <p id="p1">Maquiavelo 10 <a href="../maquiavelo/maquiavelo1.html" class="btn btn-danger">←</a> </p>
+                        <p id="p1">Maquiavelo 11 <a href="../maquiavelo/maquiavelo1.html" class="btn btn-danger">←</a> </p>
+                        <p id="p1">Maquiavelo 12 <a href="../maquiavelo/maquiavelo1.html" class="btn btn-danger">←</a> </p>
+                    </div>
+                </div>
+                </div>   
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

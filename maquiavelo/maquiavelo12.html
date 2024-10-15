@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Cormorant+Garamond:ital,wght@1,600&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Polyquot</title>
+</head>
+<body>
+    <div class="container">
+        <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active custom-font-size2" id="nav-hover" aria-current="page" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active custom-font-size2" id="nav-hover" href="../menú/prueba.html">Menú</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-secondary custom-font-size2" href="#"><u>Maquiavelo</u></a>
+        </li>
+        </ul>
+
+
+        <div class="custom-center">
+            <p id="text-original" class="text-center custom-font-size">“
+                <span class="text-light hover-pointer" data-bs-toggle="popover" data-bs-content=" the" data-bs-trigger="focus" tabindex="0"> The main foundations of every state, new states as well as ancient or composite ones, are good laws and good arms</span>. ”</p>
+
+            <p id="text-alt" class="text-center custom-font-size">“
+                <span class="text-light hover-pointer" data-bs-toggle="popover" data-bs-content=" the" data-bs-trigger="focus" tabindex="0"> Los principales cimientos de todo estado, ya sean nuevos estados así como antiguos o compuestos, son buenas leyes y buenas armas</span>.”</p>
+
+            <button id="btn-toggle" class="btn-toggle" btn-outline-warning onclick="traducir()"><span class="material-symbols-outlined">
+                g_translate
+                </span></button>
+        </div>
+        
+        <button id="playButton">🞂</button>
+
+        <!-- Elemento de audio oculto -->
+        <audio id="audioPlayer" controls style="display: none">
+            <source src="miyamoto1.mp3" type="audio/mpeg">
+            Tu navegador no soporta la reproducción de audio.
+        </audio>
+
+
+        </div>
+        <div class="container-autor">
+            <div class="fixed-bottom d-flex justify-content-center mb-4">
+                <p class="text-center custom-font-size" id="autor"><a href="./maquiavelo11.html" class="btn btn-secondary">⇤</a> - Maquiavelo <a href="./maquiavelo13.html" class="btn btn-secondary">⇥</a></p>
+            </div>
+        </div>
+
+        <script>
+            // Obtener elementos de audio y botón
+            var audio = document.getElementById("audioPlayer");
+            var playButton = document.getElementById("playButton");
+    
+            // Agregar evento de clic al botón de reproducción
+            playButton.addEventListener("click", function () {
+                if (audio.paused) {
+                    audio.play();
+                    playButton.textContent = "🞂";
+                } else {
+                    audio.pause();
+                    playButton.textContent = "🞂";
+                }
+            });
+        </script>
+
+        <script>
+            // Función para que al hacer click se muestre la traducción
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl)
+            });
+        </script>
+
+        <script>
+            // Función para cambiar el texto de español/ingles ingles/español
+            function traducir() {
+                // Obtiene los elementos por sus ids
+                var textOriginal = document.getElementById("text-original");
+                var textAlt = document.getElementById("text-alt");
+                var btnToggle = document.getElementById("btn-toggle");
+    
+                // Verifica si el texto original está visible
+                if (textOriginal.style.display == "block") {
+                    // Oculta el texto original y muestra el alternativo
+                    textOriginal.style.display = "none";
+                    textAlt.style.display = "block";
+                    // Cambia el texto del botón
+                    btnToggle.innerHTML = "Inglés";
+                } else {
+                    // Muestra el texto original y oculta el alternativo
+                    textOriginal.style.display = "block";
+                    textAlt.style.display = "none";
+                    // Cambia el texto del botón
+                    btnToggle.innerHTML = "Español";
+                }
+            }
+        </script>
+</body>
+</html>

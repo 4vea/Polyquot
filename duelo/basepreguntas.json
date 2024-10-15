@@ -1,0 +1,82 @@
+[
+    {
+        "categoria":"Nivel 1",
+        "pregunta": "Hello",
+        "respuesta": "Hola",
+        "incorrecta1": "Adiós",
+        "incorrecta2": "Chau",
+        "incorrecta3": "Salud\r"
+    },
+    {
+        "categoria":"Nivel 1",
+        "pregunta": "Water",
+        "respuesta": "Agua",
+        "incorrecta1": "Fuego",
+        "incorrecta2": "Cielo",
+        "incorrecta3": "Azul\r"
+    },
+    {
+        "categoria":"Nivel 1",
+        "pregunta": "Cat",
+        "respuesta": "Gato",
+        "incorrecta1": "Perro",
+        "incorrecta2": "Tumba",
+        "incorrecta3": "Celular\r"
+    },
+    {
+        "categoria":"Nivel 1",
+        "pregunta": "Dog",
+        "respuesta": "Perro",
+        "incorrecta1": "Pájaro",
+        "incorrecta2": "Oceáno",
+        "incorrecta3": "Casa\r"
+    },
+    {
+        "categoria":"Nivel 1",
+        "pregunta": "House",
+        "respuesta": "Casa",
+        "incorrecta1": "Ciudad",
+        "incorrecta2": "Pelota",
+        "incorrecta3": "Mesa\r"
+    },
+    {
+        "categoria":"Nivel 1",
+        "pregunta": "Blue",
+        "respuesta": "Azul",
+        "incorrecta1": "Blanco",
+        "incorrecta2": "Rojo",
+        "incorrecta3": "Amarillo\r"
+    },
+    {
+        "categoria":"Nivel 1",
+        "pregunta": "Four",
+        "respuesta": "Cuatro",
+        "incorrecta1": "Diez",
+        "incorrecta2": "Uno",
+        "incorrecta3": "Cinco\r"
+    },
+    {
+        "categoria":"Nivel 1",
+        "pregunta": "White",
+        "respuesta": "Blanco",
+        "incorrecta1": "Negro",
+        "incorrecta2": "Azul",
+        "incorrecta3": "Morado\r"
+    },
+    {
+        "categoria":"Nivel 1",
+        "pregunta": "Sun",
+        "respuesta": "Sol",
+        "incorrecta1": "Cielo",
+        "incorrecta2": "Brazo",
+        "incorrecta3": "Cabeza\r"
+    },
+    {
+        "categoria":"Nivel 1",
+        "pregunta": "Black",
+        "respuesta": "Negro",
+        "incorrecta1": "Rojo",
+        "incorrecta2": "Celeste",
+        "incorrecta3": "Azul\r"
+    }
+]
