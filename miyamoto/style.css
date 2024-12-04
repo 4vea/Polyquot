@@ -105,6 +105,7 @@ body{
         background-color: rgb(243, 201, 201);
         color: black;
     }    
+
     @media (max-width: 767px) {
         #playButton{
             top: 70%;

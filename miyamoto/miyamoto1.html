@@ -94,9 +94,11 @@
                 if (audio.paused) {
                     audio.play();
                     playButton.textContent = "🞂";
+                    playButton.style.paddingRight = "10px";
                 } else {
                     audio.pause();
-                    playButton.textContent = "🞂";
+                    playButton.textContent = "ll";
+                    playButton.style.paddingRight = "11px";
                 }
             });
         </script>
