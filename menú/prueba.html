@@ -19,6 +19,28 @@
         background-attachment: fixed;
         background-position: center;
         }
+        /* Estilizar la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Estilizar la pista de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+    background: #060614; /* Azul oscuro */
+    border-radius: 5px;
+}
+
+/* Estilizar el pulgar de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+    background: #101d31b1; /* Un tono complementario */
+    border-radius: 5px;
+}
+
+/* Estilizar el pulgar de la barra de desplazamiento cuando se pasa el ratón */
+::-webkit-scrollbar-thumb:hover {
+    background: #5c582775; /* Color diferente al pasar el ratón */
+}
+
         .navbar{
             background-color: rgb(26, 25, 25);
         }
@@ -109,7 +131,10 @@
         }
     </style>
 </head>
+
 <body>
+
+    <!-- INICIO NAV -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
         <a class="navbar-brand nav-titulo" href="#">P o l y q u o T</a>
@@ -131,14 +156,75 @@
         </div>
         </div>
     </nav>
+    <!-- FIN NAV -->
+
+
+    <!-- INICIO ACORDEONES -->
     <div class="accordion" id="accordionPanelsStayOpenExample">
+        <!-- INICIO ACORDEON 1-1  -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOneOne">
+                <button class="accordion-button collapsed mi-acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOneOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOneOne">
+                - Frases Nivel C1 Tema : Lo que sea
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOneOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOneOne">
+                <div class="accordion-body">
+                    
+                </div>
+            </div>
+            </div>
+        <!-- FIN ACORDEON 1-1 -->
+        <!-- INICIO ACORDEON 1-2  -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOneTwo">
+                <button class="accordion-button collapsed mi-acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOneTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseOneTwo">
+                - Frases Nivel C1 Tema : Tecnología web
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOneTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOneTwo">
+                <div class="accordion-body">
+                    
+                </div>
+            </div>
+            </div>
+        <!-- FIN ACORDEON 1-2 -->
+        <!-- INICIO ACORDEON 1-3  -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOneTree">
+                <button class="accordion-button collapsed mi-acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOneTree" aria-expanded="false" aria-controls="panelsStayOpen-collapseOneTree">
+                - Frases Nivel C1 Tema : Fulbo
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOneTree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOneTree">
+                <div class="accordion-body">
+                    
+                </div>
+            </div>
+            </div>
+        <!-- FIN ACORDEON 1-3 -->
+        <!-- INICIO ACORDEON 1-4  -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOneFour">
+                <button class="accordion-button collapsed mi-acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOneFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseOneFour">
+                - Frases Nivel C1 Tema : Lol
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOneFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOneFour">
+                <div class="accordion-body">
+                    
+                </div>
+            </div>
+            </div>
+        <!-- FIN ACORDEON 1-4 -->
+        <!-- INICIO ACORDEON 2 -->
         <div class="accordion-item">
         <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-            <button class="accordion-button mi-acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            <button class="accordion-button collapsed mi-acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
             - Platón
             </button>
         </h2>
-        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
             <div class="accordion-body">
                 <p id="p1">Platón sobre la compañía. <a href="../Platon1.html" class="btn btn-warning">←</a> </p>
                 <p id="p1">Platón sobre las decisiones <a href="../Platon2.html" class="btn btn-warning">←</a><br></p>
@@ -147,6 +233,8 @@
             </div>
         </div>
         </div>
+        <!-- FIN ACORDEON 2  -->
+        <!-- INICIO ACORDEON 3  -->
         <div class="accordion-item">
         <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
             <button class="accordion-button collapsed mi-acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
@@ -168,6 +256,8 @@
             </div>
         </div>
         </div>
+        <!-- FIN ACORDEON 3  -->
+        <!-- INICIO ACORDEON 4  -->
         <div class="accordion-item">
         <h2 class="accordion-header" id="panelsStayOpen-headingThree">
             <button class="accordion-button collapsed mi-acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
@@ -184,6 +274,8 @@
             </div>
         </div>
         </div>
+        <!-- FIN ACORDEON 4  -->
+        <!-- INICIO ACORDEON 5  -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingFour">
                 <button class="accordion-button collapsed mi-acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
@@ -197,14 +289,15 @@
                 </div>
             </div>
             </div>
-
-            <div class="accordion-item">
+        <!-- FIN ACORDEON 5  -->
+        <!-- INICIO ACORDEON 6  -->
+        <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingFive">
                     <button class="accordion-button collapsed mi-acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
                     - Maquiavelo
                     </button>
                 </h2>
-                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
                     <div class="accordion-body">
                         <p id="p1">Maquiavelo 1 <a href="../maquiavelo/maquiavelo1.html" class="btn btn-danger">←</a> </p>
                         <p id="p1">Maquiavelo 2 <a href="../maquiavelo/maquiavelo1.html" class="btn btn-danger">←</a> </p>
@@ -219,10 +312,11 @@
                         <p id="p1">Maquiavelo 11 <a href="../maquiavelo/maquiavelo1.html" class="btn btn-danger">←</a> </p>
                         <p id="p1">Maquiavelo 12 <a href="../maquiavelo/maquiavelo1.html" class="btn btn-danger">←</a> </p>
                     </div>
-                </div>
-                </div>   
+            </div>
+        </div>   
+        <!-- FIN ACORDEON 6  -->
     </div>
-    
+    <!-- FIN ACORDEONES -->
 
     
     
