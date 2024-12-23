@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Polyquot</title>
+</head>
+<body>
+    <div class="container">
+        <div class="custom-center">
+            <!-- Contenedor para mostrar las frases -->
+            <p id="text-original" class="custom-font-size">Cargando...</p>
+            <p id="text-alt" class="custom-font-size d-none">Cargando...</p>
+
+            <!-- Botón para alternar entre idiomas -->
+            <button id="btn-toggle" class="btn btn-outline-warning" onclick="toggleLanguage()">Inglés</button>
+            <!-- Botón para avanzar a la siguiente frase -->
+            <button id="btn-ant" class="btn btn-primary mt-3" onclick="antPhrase()">Anterior frase</button>
+            <!-- Botón para avanzar a la siguiente frase -->
+            <button id="btn-next" class="btn btn-primary mt-3" onclick="nextPhrase()">Siguiente frase</button>
+        </div>
+    </div>
+
+    <script>
+        // Variable para controlar el idioma (español o inglés)
+        let isSpanish = true;
+
+        // Índice actual de la frase
+        let currentIndex = 0;
+
+        // Array para almacenar las frases cargadas
+        let phrases = [];
+
+        // Función para alternar entre español e inglés
+        function toggleLanguage() {
+            const textOriginal = document.getElementById("text-original");
+            const textAlt = document.getElementById("text-alt");
+            const btnToggle = document.getElementById("btn-toggle");
+
+            // Cambiar entre español e inglés
+            isSpanish = !isSpanish;
+            if (isSpanish) {
+                textOriginal.classList.remove("d-none");
+                textAlt.classList.add("d-none");
+                btnToggle.innerHTML = "Inglés";
+            } else {
+                textOriginal.classList.add("d-none");
+                textAlt.classList.remove("d-none");
+                btnToggle.innerHTML = "Español";
+            }
+        }
+
+        // Función para avanzar a la siguiente frase
+        function nextPhrase() {
+            // Incrementar el índice
+            currentIndex++;
+            // Si se llega al final, volver al inicio
+            if (currentIndex >= phrases.length) {
+                currentIndex = 0;
+            }
+            // Actualizar las frases mostradas
+            updatePhrases();
+        }
+        // Función para avanzar a la siguiente frase
+        function antPhrase() {
+            // Incrementar el índice
+            currentIndex--;
+            // Actualizar las frases mostradas
+            updatePhrases();
+        }
+
+        // Función para actualizar las frases mostradas en pantalla
+        function updatePhrases() {
+            const textOriginal = document.getElementById("text-original");
+            const textAlt = document.getElementById("text-alt");
+
+            // Mostrar la frase actual
+            const currentPhrase = phrases[currentIndex];
+            textOriginal.innerText = `“${currentPhrase.es}”`;
+            textAlt.innerText = `“${currentPhrase.en}”`;
+        }
+
+        // Función para cargar frases desde un archivo JSON
+        async function loadPhrases() {
+            try {
+                const response = await fetch("frases.json");
+                phrases = await response.json();
+
+                // Mostrar la primera frase
+                updatePhrases();
+            } catch (error) {
+                console.error("Error al cargar las frases:", error);
+                document.getElementById("text-original").innerText = "Error al cargar las frases.";
+            }
+        }
+
+        // Cargar las frases al iniciar la página
+        loadPhrases();
+    </script>
+</body>
+</html>
