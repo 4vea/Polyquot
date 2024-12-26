@@ -14,15 +14,18 @@
             <!-- Contenedor para mostrar las frases -->
             <p id="text-original" class="custom-font-size">Cargando...</p>
             <p id="text-alt" class="custom-font-size d-none">Cargando...</p>
-
-            <!-- Botón para alternar entre idiomas -->
-            <button id="btn-toggle" class="btn btn-outline-warning" onclick="toggleLanguage()">Inglés</button>
-            <!-- Botón para avanzar a la siguiente frase -->
-            <button id="btn-ant" class="btn btn-primary mt-3" onclick="antPhrase()">Anterior frase</button>
-            <!-- Botón para avanzar a la siguiente frase -->
-            <button id="btn-next" class="btn btn-primary mt-3" onclick="nextPhrase()">Siguiente frase</button>
         </div>
+
+        
     </div>
+    <div class="cont2">
+        <!-- Botón para alternar entre idiomas -->
+        <button id="btn-toggle" class="btn btn-outline-warning" onclick="toggleLanguage()">Inglés</button>
+        <!-- Botón para avanzar a la siguiente frase -->
+        <button id="btn-ant" class="btn btn-primary mt-3" onclick="antPhrase()">Anterior frase</button>
+        <!-- Botón para avanzar a la siguiente frase -->
+        <button id="btn-next" class="btn btn-primary mt-3" onclick="nextPhrase()">Siguiente frase</button>
+</div>
 
     <script>
         // Variable para controlar el idioma (español o inglés)
@@ -46,6 +49,7 @@
                 textOriginal.classList.remove("d-none");
                 textAlt.classList.add("d-none");
                 btnToggle.innerHTML = "Inglés";
+                console.log(currentIndex)
             } else {
                 textOriginal.classList.add("d-none");
                 textAlt.classList.remove("d-none");
