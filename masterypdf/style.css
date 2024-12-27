@@ -2,37 +2,42 @@ body{
     background-color: black;
     color: whitesmoke;
     height: 100vh;
-    font-family: 'Roboto';
+    font-family: 'Roboto'; /* Fuentes claras y legibles */
     line-height: 1.6; /* Espaciado entre líneas para facilitar lectura */
     }
 
 .container{
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     text-align: left;
     display: block;
     position: absolute;
-    margin-top: 240px;
-    margin-left: 50px;
+    margin-top: 200px;
+    margin-left: 30px;
+    max-width: 90%;
 }
 @media (max-width: 768px) {
     .cont2{
         position: absolute;
-        margin-top: 400px;
+        margin-top: 600px;
     }
     #btn-toggle{
         margin-bottom: 50px;
-        margin-left: 220px;
+        margin-left: 310px;
         max-width: 100px;
+        padding: 12px;
     }
     
     #btn-next{
         margin-top: 20px;
+        margin-left: 30px;
+        padding: 12px;
         margin-right: 20px;
         max-width: fit-content;
         align-self: end;
     }
     #btn-ant{
-        margin-left: 20px;
+        padding: 12px;
+        margin-left: 70px;
         width: 136px;
         background-color: brown;
         border: none;
